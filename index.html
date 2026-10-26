@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Huiseon Hwang</title>
 <meta name="description" content="Huiseon Hwang — Integrated M.S.–Ph.D. student, Department of Biological Sciences, KAIST. RNA biology, m6A, bioinformatics.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238a3b5c'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3EHH%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Huiseon Hwang">
+<meta property="og:description" content="Integrated MS–PhD student, Biological Sciences, KAIST · RNA biology &amp; m6A">
+<meta property="og:url" content="https://sunny6hhs.github.io/">
+<meta property="og:image" content="https://sunny6hhs.github.io/assets/profile.jpg">
+<meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <style>
@@ -24,7 +31,7 @@ nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 90%,
 nav .in{max-width:880px;margin:0 auto;padding:12px 16px;display:flex;gap:20px;overflow-x:auto;white-space:nowrap}
 nav a{color:var(--muted);font-size:14px;font-weight:500}
 nav a.brand{color:var(--fg);font-weight:600;margin-right:auto}
-main{max-width:880px;margin:0 auto;padding:0 16px 80px}
+main{max-width:880px;margin:0 auto;padding:0 16px 24px}
 header.hero{padding:64px 0 40px;border-bottom:1px solid var(--line)}
 h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(34px,6vw,48px);margin:0;line-height:1.1}
 .kor{color:var(--muted);font-size:18px;margin-left:8px;font-family:"DM Sans",sans-serif;font-weight:400}
@@ -50,7 +57,7 @@ h2 small{font-family:"DM Sans";font-size:12px;letter-spacing:.12em;text-transfor
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips span{background:var(--chip);padding:4px 12px;border-radius:6px;font-size:14px}
 .sk h3{font-size:14px;margin:18px 0 10px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
-.interests{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.interests{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .card{border:1px solid var(--line);border-radius:10px;padding:16px}
 .card b{display:block;margin-bottom:4px}
 .card p{margin:0;color:var(--muted);font-size:14px}
@@ -62,7 +69,7 @@ h2 small{font-family:"DM Sans";font-size:12px;letter-spacing:.12em;text-transfor
 .aw{display:grid;grid-template-columns:130px 1fr;gap:4px 20px;margin-bottom:14px}
 @media (max-width:600px){.aw{grid-template-columns:1fr}}
 footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);font-size:13px}
-@media (max-width:600px){.item{grid-template-columns:1fr}.when{padding:0}}
+@media (max-width:600px){.interests{grid-template-columns:1fr}.item{grid-template-columns:1fr}.when{padding:0}}
 </style>
 </head>
 <body>
@@ -90,6 +97,7 @@ footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);f
   <div class="links">
     <a href="mailto:sunny6hhs@gmail.com">Email</a>
     <a href="https://www.linkedin.com/in/huiseon-hwang-725294158/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://orcid.org/0009-0001-2957-0870" target="_blank" rel="noopener">ORCID</a>
     <a href="https://www.researchgate.net/profile/Huiseon_Hwang" target="_blank" rel="noopener">ResearchGate</a>
     <a href="https://github.com/sunny6hhs" target="_blank" rel="noopener">GitHub</a>
     <a href="https://www.yoonlab.info/" target="_blank" rel="noopener">Lab Website</a>
@@ -97,12 +105,12 @@ footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);f
 </header>
 
 <section id="about">
-  <h2><small>About</small>Hello</h2>
+  <h2>About</h2>
   <p>I am an integrated M.S.–Ph.D. student in the Department of Biological Sciences at KAIST, working in Prof. Ki-Jun Yoon Laboratory. My research sits at the intersection of RNA biology and neural development, with a focus on N<sup>6</sup>-methyladenosine (m<sup>6</sup>A) RNA methylation. I combine wet-lab experiments with computational analysis of high-throughput sequencing data.</p>
 </section>
 
 <section id="education">
-  <h2><small>Education</small>Education</h2>
+  <h2>Education</h2>
   <div class="item">
     <div class="when">Mar 2021 – Present</div>
     <div class="what"><b>Integrated M.S.–Ph.D. Programme, Biological Sciences</b><br>
@@ -116,7 +124,7 @@ footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);f
 </section>
 
 <section id="research">
-  <h2><small>Research</small>Research Interests</h2>
+  <h2>Research Interests</h2>
   <div class="interests">
     <div class="card"><b>m<sup>6</sup>A Epitranscriptomics</b><p>Transcriptome-wide m<sup>6</sup>A mapping and the roles of writers and readers (e.g., METTL14, METTL16, YTHDF2).</p></div>
     <div class="card"><b>RNA Biology in Neurones</b><p>mRNA transport and local regulation during neuronal development and axon outgrowth.</p></div>
@@ -126,7 +134,7 @@ footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);f
 </section>
 
 <section id="publications">
-  <h2><small>Publications</small>Publications</h2>
+  <h2>Publications</h2>
   <div class="pub">
     <div class="t">The m<sup>6</sup>A reader YTHDF2 regulates mRNA transport and axon outgrowth in developing neurons</div>
     <div class="a">Bonsang Koo*, Ajeet Kumar*, <span class="me">Huiseon Hwang</span>*, …, Ki-Jun Yoon</div>
@@ -137,17 +145,19 @@ footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);f
     <div class="t">Potential toxicity of inorganic ions in particulate matter: Ion permeation in lung and disruption of cell metabolism</div>
     <div class="a">Sujin Park, …, <span class="me">Huiseon Hwang</span>, …, Siyoung Q. Choi</div>
     <div class="v">Science of the Total Environment, 2022</div>
+    <div class="btns"><a href="https://www.researchgate.net/publication/358548607_Potential_toxicity_of_inorganic_ions_in_particulate_matter_Ion_permeation_in_lung_and_disruption_of_cell_metabolism" target="_blank" rel="noopener">ResearchGate</a></div>
   </div>
   <div class="pub">
     <div class="t">Potential Toxicity of Inorganic Ions in Particulate Matter: Ion Permeation in Lung and Disruption of Cell Metabolism</div>
     <div class="a">Sujin Park, …, <span class="me">Huiseon Hwang</span>, …, Siyoung Q. Choi</div>
     <div class="v">SSRN Electronic Journal, 2021</div>
+    <div class="btns"><a href="https://www.researchgate.net/publication/356953871_Potential_Toxicity_of_Inorganic_Ions_in_Particulate_Matter_Ion_Permeation_in_Lung_and_Disruption_of_Cell_Metabolism" target="_blank" rel="noopener">ResearchGate</a></div>
   </div>
 <p class="v" style="color:var(--muted);font-size:14px;margin:0">* These authors contributed equally.</p>
 </section>
 
 <section id="awards">
-  <h2><small>Honours</small>Grants, Honours &amp; Awards</h2>
+  <h2>Grants, Honours &amp; Awards</h2>
   <div class="aw"><div class="when">Apr – Nov 2025</div><div class="what"><b>KAIST Venture Research Program for Master&rsquo;s and PhD Students</b> (funded by the Ministry of Science and ICT)<br><span class="sub">&ldquo;Understanding complex interaction of RNAs and proteins within RNA granules from hESCs and hESC-derived neurones&rdquo;</span></div></div>
   <div class="aw"><div class="when">Feb 2024</div><div class="what"><b>Excellent Poster Award</b>, 2023 KAIST BK21 FOUR Biological Sciences Graduate Research Symposium</div></div>
   <div class="aw"><div class="when">Feb 2021</div><div class="what"><b>B.S. awarded <i>Cum Laude</i></b>, KAIST</div></div>
@@ -156,7 +166,7 @@ footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);f
 </section>
 
 <section id="skills" class="sk">
-  <h2><small>Skills</small>Skills</h2>
+  <h2>Skills</h2>
   <h3>Wet Lab</h3>
   <div class="chips"><span>Western blot</span><span>qPCR</span><span>Co-immunoprecipitation</span><span>Cell culture</span><span>Human neurone culture</span><span>Immunocytochemistry</span><span>Immunohistochemistry</span><span>LC-MS/MS sample preparation</span><span>RNA sample preparation for NGS</span><span>Miniprep</span><span>Bacterial transformation</span></div>
   <h3>Computational</h3>
@@ -166,7 +176,7 @@ footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);f
 </section>
 
 <section id="contact">
-  <h2><small>Contact</small>Get in Touch</h2>
+  <h2>Get in Touch</h2>
   <p>Department of Biological Sciences, KAIST, 291 Daehak-ro, Yuseong-gu, Daejeon, Republic of Korea<br>
   <a href="mailto:sunny6hhs@gmail.com">sunny6hhs@gmail.com</a></p>
 </section>
