@@ -54,6 +54,13 @@ h2 small{font-family:"DM Sans";font-size:12px;letter-spacing:.12em;text-transfor
 .card{border:1px solid var(--line);border-radius:10px;padding:16px}
 .card b{display:block;margin-bottom:4px}
 .card p{margin:0;color:var(--muted);font-size:14px}
+.hero-top{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.avatar{width:140px;height:140px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+.btns{margin-top:6px;display:flex;gap:6px}
+.btns a{font-size:12px;font-weight:500;border:1px solid var(--accent);color:var(--accent);padding:1px 10px;border-radius:4px}
+.btns a:hover{background:var(--accent);color:var(--bg);text-decoration:none}
+.aw{display:grid;grid-template-columns:130px 1fr;gap:4px 20px;margin-bottom:14px}
+@media (max-width:600px){.aw{grid-template-columns:1fr}}
 footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);font-size:13px}
 @media (max-width:600px){.item{grid-template-columns:1fr}.when{padding:0}}
 </style>
@@ -65,15 +72,21 @@ footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);f
   <a href="#education">Education</a>
   <a href="#research">Research</a>
   <a href="#publications">Publications</a>
+  <a href="#awards">Awards</a>
   <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
 </div></nav>
 
 <main id="top">
 <header class="hero">
+  <div class="hero-top">
+  <img class="avatar" src="assets/profile.jpg" alt="Huiseon Hwang">
+  <div>
   <h1>Huiseon Hwang <span class="kor">황희선</span></h1>
   <p class="role">Integrated M.S.–Ph.D. Student</p>
   <p class="aff">Department of Biological Sciences, KAIST · <a href="https://www.yoonlab.info/" target="_blank" rel="noopener">Prof. Ki-Jun Yoon Laboratory</a> · Daejeon, Korea</p>
+  </div>
+  </div>
   <div class="links">
     <a href="mailto:sunny6hhs@gmail.com">Email</a>
     <a href="https://www.linkedin.com/in/huiseon-hwang-725294158/" target="_blank" rel="noopener">LinkedIn</a>
@@ -116,8 +129,9 @@ footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);f
   <h2><small>Publications</small>Publications</h2>
   <div class="pub">
     <div class="t">The m<sup>6</sup>A reader YTHDF2 regulates mRNA transport and axon outgrowth in developing neurons</div>
-    <div class="a">Bonsang Koo, Ajeet Kumar, <span class="me">Huiseon Hwang</span>*, …, Ki-Jun Yoon</div>
+    <div class="a">Bonsang Koo*, Ajeet Kumar*, <span class="me">Huiseon Hwang</span>*, …, Ki-Jun Yoon</div>
     <div class="v">Nature Communications, 2026 <span class="tag">Co-first author</span></div>
+    <div class="btns"><a href="https://doi.org/10.1038/s41467-026-76161-8" target="_blank" rel="noopener">DOI</a><a href="https://www.eurekalert.org/news-releases/1143768" target="_blank" rel="noopener">Press</a></div>
   </div>
   <div class="pub">
     <div class="t">Potential toxicity of inorganic ions in particulate matter: Ion permeation in lung and disruption of cell metabolism</div>
@@ -129,7 +143,15 @@ footer{max-width:880px;margin:0 auto;padding:24px 16px 48px;color:var(--muted);f
     <div class="a">Sujin Park, …, <span class="me">Huiseon Hwang</span>, …, Siyoung Q. Choi</div>
     <div class="v">SSRN Electronic Journal, 2021</div>
   </div>
-<p class="v" style="color:var(--muted);font-size:14px;margin:0">* Co-first author</p>
+<p class="v" style="color:var(--muted);font-size:14px;margin:0">* These authors contributed equally.</p>
+</section>
+
+<section id="awards">
+  <h2><small>Honours</small>Honours &amp; Awards</h2>
+  <div class="aw"><div class="when">Feb 2024</div><div class="what"><b>Excellent Poster Award</b>, 2023 KAIST BK21 FOUR Biological Sciences Graduate Research Symposium</div></div>
+  <div class="aw"><div class="when">Feb 2021</div><div class="what"><b>B.S. awarded <i>Cum Laude</i></b>, KAIST</div></div>
+  <div class="aw"><div class="when">Spring 2018</div><div class="what"><b>Dean&rsquo;s List</b>, Department of Biological Sciences, KAIST</div></div>
+  <div class="aw"><div class="when">May 2015</div><div class="what"><b>Grand Award, 4th Place</b>, Intel International Science and Engineering Fair (ISEF) — project on mycorrhizal network–mediated plant immune responses</div></div>
 </section>
 
 <section id="skills" class="sk">
